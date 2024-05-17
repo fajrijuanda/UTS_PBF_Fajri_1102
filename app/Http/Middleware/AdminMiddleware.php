@@ -30,7 +30,7 @@ class AdminMiddleware
             return $next($request);
         } 
         if ($decode->role == 'user'){
-            if ($request->is('api/category*')){
+            if ($request->is('api/categories*')){
                 return response()->json(['Anda tidak memiliki hak akses'], 422);
             } else {
                 return $next($request);

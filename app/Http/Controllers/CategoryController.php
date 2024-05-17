@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends Controller
 {
-    public function store(Request $request)
+    public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:255',
@@ -28,7 +28,7 @@ class CategoryController extends Controller
         ], 201);
     }
 
-    public function showAll()
+    public function read()
     {
         $categories = Category::all();
         return response()->json([
@@ -37,34 +37,7 @@ class CategoryController extends Controller
         ], 200);
     }
 
-    public function showById($id)
-    {
-        $category = Category::find($id);
-        if ($category) {
-            return response()->json([
-                'msg' => 'Data Kategori Dengan ID: ' . $id,
-                'data' => $category
-            ], 200);
-        }
-        return response()->json([
-            'msg' => 'Data Kategori dengan ID: ' . $id . ' Tidak Ditemukan'
-        ], 404);
-    }
-
-    public function showByName($name)
-    {
-        $categories = Category::where('name', 'LIKE', '%' . $name . '%')->get();
-        if ($categories->count() > 0) {
-            return response()->json([
-                'msg' => 'Data Produk Dengan Nama Yang Mirip: ' . $name,
-                'data' => $categories
-            ], 200);
-        }
-        return response()->json([
-            'msg' => 'Data Produk dengan Nama Yang Mirip: ' . $name . ' Tidak Ditemukan'
-        ], 404);
-    }
-
+   
     public function update(Request $request, $id)
     {
         $validator = Validator::make($request->all(), [
