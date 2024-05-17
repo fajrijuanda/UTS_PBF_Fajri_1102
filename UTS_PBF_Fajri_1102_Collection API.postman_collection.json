@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "41f58061-f5b0-403d-a5f4-1057bdaf1492",
+		"name": "UTS_PBF_Fajri_1102_Collection API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33430083"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "ShowAll",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product/1",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowByName",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product/search/Potabee",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product",
+								"search",
+								"Potabee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Lays",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "20000",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "Snack",
+									"type": "text"
+								},
+								{
+									"key": "expired_at",
+									"value": "2024-12-10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzNTM1NSwiZXhwIjoxNzE1OTM4OTU1fQ.H2MH4TpYS7SSVXEG_jCJ0JO8-HAk51ewgxPCzEzj3PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Japota",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product/4",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzNTM1NSwiZXhwIjoxNzE1OTM4OTU1fQ.H2MH4TpYS7SSVXEG_jCJ0JO8-HAk51ewgxPCzEzj3PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/product/4",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "ShowAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ShowById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ShowByName",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin - Login",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "fajri",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "fajrijuanda@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "6Jan2001",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/register",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@mail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/login",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OAuth Google",
+			"item": [
+				{
+					"name": "Redirect",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/auth/google",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"google"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
