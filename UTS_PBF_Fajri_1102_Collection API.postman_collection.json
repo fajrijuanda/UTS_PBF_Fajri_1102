@@ -17,7 +17,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
 									"type": "string"
 								}
 							]
@@ -48,7 +48,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
 									"type": "string"
 								}
 							]
@@ -80,7 +80,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MjQsIm5hbWUiOiJGQUpSSSBZQU5VQVIgU0hJRERJUSBKVUFOREEgVUJQS0FSQVdBTkciLCJyb2xlIjoidXNlciIsImlhdCI6MTcxNTkzMTM4NywiZXhwIjoxNzE1OTM0OTg3fQ.1fjtQDVtTJTZGo40y5ZEndI2gC6OPKAVw5fbvZbYHqI",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
 									"type": "string"
 								}
 							]
@@ -247,55 +247,214 @@
 				{
 					"name": "ShowAll",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "ShowById",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category/1",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "ShowByName",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category/search/Beverage",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category",
+								"search",
+								"Beverage"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "Create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Cosmetic",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "Update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category/1?name=Food",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category",
+								"1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Food"
+								}
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "Delete",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NCwibmFtZSI6IkFkbWluaXN0cmF0b3IiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3MTU5NDMxMDksImV4cCI6MTcxNTk0NjcwOX0.oNZrzQogE_HArg3xt6_sGVyCpZFxpQOhoLmhsljpaEA",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://utspbffajri1102.sistemapotekmitragaluh.com/api/category/3",
+							"protocol": "https",
+							"host": [
+								"utspbffajri1102",
+								"sistemapotekmitragaluh",
+								"com"
+							],
+							"path": [
+								"api",
+								"category",
+								"3"
+							]
+						}
 					},
 					"response": []
 				}
 			]
 		},
 		{
-			"name": "Admin - Login",
+			"name": "Account",
 			"item": [
 				{
 					"name": "Register",
